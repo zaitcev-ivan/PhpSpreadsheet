@@ -756,16 +756,6 @@ parameters:
 			path: src/PhpSpreadsheet/Calculation/Internal/MakeMatrix.php
 
 		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\Internal\\\\WildcardMatch\\:\\:wildcard\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/Internal/WildcardMatch.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\Internal\\\\WildcardMatch\\:\\:compare\\(\\) has parameter \\$value with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/Internal/WildcardMatch.php
-
-		-
 			message: "#^Call to function is_string\\(\\) with null will always evaluate to false\\.$#"
 			count: 3
 			path: src/PhpSpreadsheet/Calculation/Logical/Operations.php
@@ -1321,11 +1311,6 @@ parameters:
 			path: src/PhpSpreadsheet/Calculation/TextData.php
 
 		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\:\\:TRIMSPACES\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData.php
-
-		-
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\:\\:CONCATENATE\\(\\) has parameter \\$args with no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Calculation/TextData.php
@@ -1339,96 +1324,6 @@ parameters:
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\:\\:SEARCHINSENSITIVE\\(\\) should return string but returns int\\|string\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Calculation/TextData.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\CharacterConvert\\:\\:character\\(\\) should return string but returns string\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\CharacterConvert\\:\\:unicodeToOrd\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\CharacterConvert\\:\\:unicodeToOrd\\(\\) has parameter \\$character with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Cannot access offset 1 on array\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Parameter \\#2 \\$data of function unpack expects string, string\\|false given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\CharacterConvert\\:\\:convertBooleanValue\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\CharacterConvert\\:\\:convertBooleanValue\\(\\) has parameter \\$value with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/CharacterConvert.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\Concatenate\\:\\:CONCATENATE\\(\\) has parameter \\$args with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Concatenate.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\Concatenate\\:\\:convertBooleanValue\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Concatenate.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\Concatenate\\:\\:convertBooleanValue\\(\\) has parameter \\$value with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Concatenate.php
-
-		-
-			message: "#^Parameter \\#3 \\$length of function mb_substr expects int\\|null, float\\|int\\<0, max\\>\\|string given\\.$#"
-			count: 3
-			path: src/PhpSpreadsheet/Calculation/TextData/Extract.php
-
-		-
-			message: "#^Parameter \\#2 \\$start of function mb_substr expects int, float\\|int given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Calculation/TextData/Extract.php
-
-		-
-			message: "#^Cannot cast array\\|float\\|int\\|string to float\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Format.php
-
-		-
-			message: "#^Parameter \\#3 \\$offset of function mb_strpos expects int, float\\|int given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Search.php
-
-		-
-			message: "#^Parameter \\#3 \\$offset of function mb_stripos expects int, float\\|int given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Search.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\TextData\\\\Trim\\:\\:\\$invalidChars has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Trim.php
-
-		-
-			message: "#^Parameter \\#1 \\$str of function trim expects string, float\\|int\\|string given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Calculation/TextData/Trim.php
-
-		-
-			message: "#^Parameter \\#1 \\$str of function trim expects string, string\\|null given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Calculation/TextData/Trim.php
 
 		-
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Calculation\\\\Token\\\\Stack\\:\\:getStackItem\\(\\) has no return typehint specified\\.$#"
@@ -2487,7 +2382,7 @@ parameters:
 
 		-
 			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|null given\\.$#"
-			count: 4
+			count: 2
 			path: src/PhpSpreadsheet/Reader/Html.php
 
 		-
@@ -2776,11 +2671,6 @@ parameters:
 			path: src/PhpSpreadsheet/Reader/Xls.php
 
 		-
-			message: "#^Parameter \\#1 \\$value of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\MemoryDrawing\\:\\:setImageResource\\(\\) expects GdImage\\|resource, resource\\|false given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xls.php
-
-		-
 			message: "#^Parameter \\#1 \\$pValue of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\BaseDrawing\\:\\:setOffsetX\\(\\) expects int, float\\|int given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xls.php
@@ -3036,21 +2926,6 @@ parameters:
 			path: src/PhpSpreadsheet/Reader/Xls/RC4.php
 
 		-
-			message: "#^Cannot access property \\$Relationship on SimpleXMLElement\\|false\\.$#"
-			count: 12
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$sheets on SimpleXMLElement\\|false\\.$#"
-			count: 6
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot call method registerXPathNamespace\\(\\) on SimpleXMLElement\\|false\\.$#"
-			count: 4
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\:\\:castToBoolean\\(\\) has no return typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
@@ -3121,83 +2996,13 @@ parameters:
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
 
 		-
-			message: "#^Offset 'name' does not exist on SimpleXMLElement\\|null\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot call method xpath\\(\\) on SimpleXMLElement\\|false\\.$#"
-			count: 4
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
 			message: "#^Parameter \\#1 \\$is of method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\:\\:parseRichText\\(\\) expects SimpleXMLElement\\|null, object given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
 
 		-
-			message: "#^Parameter \\#1 \\$styleXml of class PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Styles constructor expects SimpleXMLElement, SimpleXMLElement\\|false given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$workbookPr on SimpleXMLElement\\|false\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Parameter \\#2 \\$xmlWorkbook of method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\:\\:readProtection\\(\\) expects SimpleXMLElement, SimpleXMLElement\\|false given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Parameter \\#1 \\$relsWorksheet of method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Hyperlinks\\:\\:readHyperlinks\\(\\) expects SimpleXMLElement, SimpleXMLElement\\|false given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$authors on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$commentList on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Argument of an invalid type array\\<SimpleXMLElement\\>\\|false supplied for foreach, only iterables are supported\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
 			message: "#^Negated boolean expression is always true\\.$#"
 			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$drawing on SimpleXMLElement\\|false\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot call method children\\(\\) on SimpleXMLElement\\|false\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot call method count\\(\\) on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot call method asXML\\(\\) on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$definedNames on SimpleXMLElement\\|false\\.$#"
-			count: 4
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
 
 		-
@@ -3212,26 +3017,6 @@ parameters:
 
 		-
 			message: "#^Cannot access offset 0 on array\\<int, string\\>\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$bookViews on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$Default on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Cannot access property \\$Override on SimpleXMLElement\\|false\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Parameter \\#1 \\$chartElements of static method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Chart\\:\\:readChart\\(\\) expects SimpleXMLElement, SimpleXMLElement\\|false given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
 
@@ -3372,11 +3157,6 @@ parameters:
 
 		-
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\:\\:boolean\\(\\) has parameter \\$value with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx.php
-
-		-
-			message: "#^Offset 'id' does not exist on SimpleXMLElement\\|null\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx.php
 
@@ -3811,66 +3591,6 @@ parameters:
 			path: src/PhpSpreadsheet/Reader/Xlsx/PageSetup.php
 
 		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:\\$securityScanner has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:\\$docProps has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:extractPropertyData\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:extractPropertyData\\(\\) has parameter \\$propertyData with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:readCoreProperties\\(\\) has parameter \\$propertyData with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Call to an undefined method object\\:\\:registerXPathNamespace\\(\\)\\.$#"
-			count: 3
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Call to an undefined method object\\:\\:xpath\\(\\)\\.$#"
-			count: 9
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:readExtendedProperties\\(\\) has parameter \\$propertyData with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:readCustomProperties\\(\\) has parameter \\$propertyData with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Argument of an invalid type object supplied for foreach, only iterables are supported\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:getArrayItem\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Properties\\:\\:getArrayItem\\(\\) has parameter \\$key with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Properties.php
-
-		-
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\SheetViewOptions\\:\\:\\$worksheet has no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx/SheetViewOptions.php
@@ -3879,16 +3599,6 @@ parameters:
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\SheetViewOptions\\:\\:\\$worksheetXml has no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx/SheetViewOptions.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\SheetViews\\:\\:\\$sheetViewXml has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/SheetViews.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\SheetViews\\:\\:\\$worksheet has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/SheetViews.php
 
 		-
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Styles\\:\\:\\$styles has no typehint specified\\.$#"
@@ -3917,11 +3627,6 @@ parameters:
 
 		-
 			message: "#^Static property PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Styles\\:\\:\\$theme \\(PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Theme\\) does not accept PhpOffice\\\\PhpSpreadsheet\\\\Reader\\\\Xlsx\\\\Theme\\|null\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Reader/Xlsx/Styles.php
-
-		-
-			message: "#^Cannot call method count\\(\\) on SimpleXMLElement\\|null\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Reader/Xlsx/Styles.php
 
@@ -4036,11 +3741,6 @@ parameters:
 			path: src/PhpSpreadsheet/ReferenceHelper.php
 
 		-
-			message: "#^Parameter \\#1 \\$pCellRange of method PhpOffice\\\\PhpSpreadsheet\\\\ReferenceHelper\\:\\:updateCellReference\\(\\) expects string, string\\|null given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/ReferenceHelper.php
-
-		-
 			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, string\\|null given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/ReferenceHelper.php
@@ -4099,11 +3799,6 @@ parameters:
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Date\\:\\:\\$possibleDateFormatCharacters has no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Shared/Date.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Drawing\\:\\:pixelsToCellDimension\\(\\) should return int but returns float\\|int\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Shared/Drawing.php
 
 		-
 			message: "#^Parameter \\#1 \\$fp of function fread expects resource, resource\\|false given\\.$#"
@@ -4237,11 +3932,6 @@ parameters:
 
 		-
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Font\\:\\:\\$autoSizeMethods has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Shared/Font.php
-
-		-
-			message: "#^Parameter \\#1 \\$pValue of static method PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Drawing\\:\\:pixelsToCellDimension\\(\\) expects int, float\\|int given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Shared/Font.php
 
@@ -4861,16 +4551,6 @@ parameters:
 			path: src/PhpSpreadsheet/Shared/XMLWriter.php
 
 		-
-			message: "#^Parameter \\#1 \\$pValue of static method PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Drawing\\:\\:pointsToPixels\\(\\) expects int, float given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Shared/Xls.php
-
-		-
-			message: "#^Parameter \\#1 \\$fontSizeInPoints of static method PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Font\\:\\:fontSizeToPixels\\(\\) expects int, float given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Shared/Xls.php
-
-		-
 			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Spreadsheet\\:\\:\\$workbookViewVisibilityValues has no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Spreadsheet.php
@@ -5411,186 +5091,6 @@ parameters:
 			path: src/PhpSpreadsheet/Style/Style.php
 
 		-
-			message: "#^Result of && is always true\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#1 \\$excelTimestamp of static method PhpOffice\\\\PhpSpreadsheet\\\\Shared\\\\Date\\:\\:excelToTimestamp\\(\\) expects float\\|int, float\\|int\\|string given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#1 \\$number of function floor expects float, float\\|int\\<1, max\\>\\|string given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:\\$toReplace has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#2 \\$now of function strtotime expects int, int\\|false given\\.$#"
-			count: 6
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#5 \\$day of function gmmktime expects int, string given\\.$#"
-			count: 8
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#6 \\$year of function gmmktime expects int, string given\\.$#"
-			count: 13
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#4 \\$mon of function gmmktime expects int, string given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#5 \\$day of function gmmktime expects int, float given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#1 \\$attributes of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\:\\:setAttributes\\(\\) expects array\\<string\\>, array\\<string, float\\|int\\|null\\> given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has parameter \\$columnID with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has parameter \\$endRow with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has parameter \\$ruleType with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has parameter \\$ruleValue with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:calculateTopTenValue\\(\\) has parameter \\$startRow with no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot call method rangeToArray\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\Worksheet\\|null\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot call method getRowDimension\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\Worksheet\\|null\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'year' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'month' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'day' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'hour' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'minute' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot assign offset 'second' to array\\<string\\>\\|string\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#1 \\$str of function preg_quote expects string, array\\<string\\>\\|string given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Cannot call method getCell\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\Worksheet\\|null\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Binary operation \"\\*\" between 0\\|array\\<string\\>\\|string and float\\|int results in an error\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Left side of && is always true\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Parameter \\#1 \\$function of function call_user_func_array expects callable\\(\\)\\: mixed, array\\('PhpOffice\\\\\\\\PhpSpreadsheet\\\\\\\\Worksheet\\\\\\\\AutoFilter', mixed\\) given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$ruleTypes has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$dateTimeGroups has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$dynamicTypes has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$operators has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$topTenValue has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$topTenType has no typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
-			message: "#^Property PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:\\$parent \\(PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\) does not accept PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\|null\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php
-
-		-
 			message: "#^Cannot call method getCell\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\Worksheet\\|null\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Worksheet/BaseDrawing.php
@@ -5792,11 +5292,6 @@ parameters:
 
 		-
 			message: "#^Parameter \\#1 \\$pRange of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:setRange\\(\\) expects string, null given\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Worksheet/Worksheet.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\Worksheet\\:\\:getFreezePane\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Worksheet/Worksheet.php
 
@@ -6244,11 +5739,6 @@ parameters:
 			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Writer\\\\Html\\:\\:calculateSpansOmitRows\\(\\) has parameter \\$sheetIndex with no typehint specified\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Writer/Html.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheet\\\\Writer\\\\IWriter\\:\\:save\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Writer/IWriter.php
 
 		-
 			message: "#^Negated boolean expression is always false\\.$#"
@@ -7186,16 +6676,6 @@ parameters:
 			path: src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php
 
 		-
-			message: "#^Parameter \\#2 \\$value of method XMLWriter\\:\\:writeAttribute\\(\\) expects string, array\\<string\\>\\|string given\\.$#"
-			count: 2
-			path: src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php
-
-		-
-			message: "#^Argument of an invalid type array\\<string\\>\\|string supplied for foreach, only iterables are supported\\.$#"
-			count: 1
-			path: src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php
-
-		-
 			message: "#^Parameter \\#2 \\$content of method XMLWriter\\:\\:writeElement\\(\\) expects string\\|null, int\\|string given\\.$#"
 			count: 1
 			path: src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php
@@ -7361,16 +6841,6 @@ parameters:
 			path: tests/PhpSpreadsheetTests/Reader/Xlsx/AutoFilterTest.php
 
 		-
-			message: "#^Function PhpOffice\\\\PhpSpreadsheetTests\\\\Reader\\\\getTitleText\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: tests/PhpSpreadsheetTests/Reader/Xlsx/ChartsTitleTest.php
-
-		-
-			message: "#^Function PhpOffice\\\\PhpSpreadsheetTests\\\\Reader\\\\getTitleText\\(\\) has parameter \\$title with no typehint specified\\.$#"
-			count: 1
-			path: tests/PhpSpreadsheetTests/Reader/Xlsx/ChartsTitleTest.php
-
-		-
 			message: "#^Cannot call method setMinimumConditionalFormatValueObject\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Style\\\\ConditionalFormatting\\\\ConditionalDataBar\\|null\\.$#"
 			count: 1
 			path: tests/PhpSpreadsheetTests/Reader/Xlsx/ConditionalFormattingDataBarXlsxTest.php
@@ -7399,11 +6869,6 @@ parameters:
 			message: "#^Cannot call method getShowValue\\(\\) on PhpOffice\\\\PhpSpreadsheet\\\\Style\\\\ConditionalFormatting\\\\ConditionalDataBar\\|null\\.$#"
 			count: 1
 			path: tests/PhpSpreadsheetTests/Reader/Xlsx/ConditionalFormattingDataBarXlsxTest.php
-
-		-
-			message: "#^Method PhpOffice\\\\PhpSpreadsheetTests\\\\Reader\\\\XlsxTest\\:\\:testStripsWhiteSpaceFromStyleString\\(\\) has parameter \\$string with no typehint specified\\.$#"
-			count: 1
-			path: tests/PhpSpreadsheetTests/Reader/XlsxTest.php
 
 		-
 			message: "#^Method PhpOffice\\\\PhpSpreadsheetTests\\\\Reader\\\\Xml\\\\XmlTest\\:\\:testInvalidSimpleXML\\(\\) has parameter \\$filename with no typehint specified\\.$#"
@@ -7441,24 +6906,9 @@ parameters:
 			path: tests/PhpSpreadsheetTests/Style/ConditionalTest.php
 
 		-
-			message: "#^Parameter \\#1 \\$pValue of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\\\Rule\\:\\:setValue\\(\\) expects array\\<string\\>\\|string, int given\\.$#"
-			count: 1
-			path: tests/PhpSpreadsheetTests/Worksheet/AutoFilter/Column/RuleTest.php
-
-		-
-			message: "#^Parameter \\#1 \\$attributes of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\:\\:setAttributes\\(\\) expects array\\<string\\>, array\\<string, int\\> given\\.$#"
-			count: 3
-			path: tests/PhpSpreadsheetTests/Worksheet/AutoFilter/ColumnTest.php
-
-		-
 			message: "#^Parameter \\#2 \\$pValue of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\:\\:setAttribute\\(\\) expects string, int given\\.$#"
 			count: 1
 			path: tests/PhpSpreadsheetTests/Worksheet/AutoFilter/ColumnTest.php
-
-		-
-			message: "#^Parameter \\#1 \\$pColumn of method PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\:\\:setColumn\\(\\) expects PhpOffice\\\\PhpSpreadsheet\\\\Worksheet\\\\AutoFilter\\\\Column\\|string, float given\\.$#"
-			count: 1
-			path: tests/PhpSpreadsheetTests/Worksheet/AutoFilterTest.php
 
 		-
 			message: "#^Parameter \\#1 \\$im of function imagecolorallocate expects resource, resource\\|false given\\.$#"
