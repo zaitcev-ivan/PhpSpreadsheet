@@ -1021,7 +1021,7 @@ $writer->save('write.xls');
 ## Reader/Writer Flags
 
 Some Readers and Writers support special "Feature Flags" that need to be explicitly enabled.
-An example of this is Charts in a spreadsheet. By default, when you load a spreadsheet that contains Charts, the charts will not be loaded. If all you want to do is read the data in the spreadsheet, then loading charts is an overhead for both speed of loading and memory usage.
+Example of this are Charts and Pivot Tables in a spreadsheet. By default, when you load a spreadsheet that contains Charts, the charts will not be loaded. If all you want to do is read the data in the spreadsheet, then loading charts is an overhead for both speed of loading and memory usage.
 However, there are times when you may want to load any charts in the spreadsheet as well as the data. To do so, you need to tell the Reader explicitly to include Charts.
 
 ```php
@@ -1040,6 +1040,12 @@ If you wish to use the IOFactory `load()` method rather than instantiating a spe
 ```php
 $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load("spreadsheetWithCharts.xlsx", \PhpOffice\PhpSpreadsheet\Reader\IReader::LOAD_WITH_CHARTS);
 ```
+If you want to include both charts and pivot tables, you can combine the flags:
+```php
+$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load("spreadsheetWithCharts.xlsx", \PhpOffice\PhpSpreadsheet\Reader\IReader::LOAD_WITH_CHARTS | \PhpOffice\PhpSpreadsheet\Reader\IReader::LOAD_WITH_PIVOT_TABLES);
+```
+
+
 
 Likewise, when saving a file using a Writer, loaded charts wil not be saved unless you explicitly tell the Writer to include them:
 
@@ -1055,26 +1061,26 @@ $writer = IOFactory::createWriter($spreadsheet, 'Xlsx');
 $writer->save('mySavedFileWithCharts.xlsx', \PhpOffice\PhpSpreadsheet\Writer\IWriter::SAVE_WITH_CHARTS);
 ```
 
-Currently, the only special "Feature Flag" that is supported in this way is the inclusion of Charts, and only for certain formats.
+Currently, the only special "Feature Flags" that are supported in this way are for the inclusion of Charts and Pivot Tables, and only for certain formats.
 
-Readers  | LOAD_WITH_CHARTS |
----------|------------------|
-Xlsx     |       YES        |
-Xls      |       NO         |
-Xml      |       NO         |
-Ods      |       NO         |
-Gnumeric |       NO         |
-Html     |       N/A        |
-Slk      |       N/A        |
-Csv      |       N/A        |
+Readers  | LOAD_WITH_CHARTS | LOAD_WITH_PIVOT_TABLES |
+---------|------------------|------------------------|
+Xlsx     |       YES        |          YES           |
+Xls      |       NO         |          NO            |
+Xml      |       NO         |          NO            |
+Ods      |       NO         |          NO            |
+Gnumeric |       NO         |          NO            |
+Html     |       N/A        |          N/A           |
+Slk      |       N/A        |          N/A           |
+Csv      |       N/A        |          N/A           |
 
 
-Writers | SAVE_WITH_CHARTS |
---------|------------------|
-Xlsx    |        YES       |
-Xls     |        NO        |
-Ods     |        NO        |
-Html    |        YES       |
-Pdf     |        YES       |
-Csv     |        N/A       |
+Writers | SAVE_WITH_CHARTS | SAVE_WITH_PIVOT_TABLES |
+--------|------------------|------------------------|
+Xlsx    |        YES       |          YES           |
+Xls     |        NO        |          NO            |
+Ods     |        NO        |          NO            |
+Html    |        YES       |          NO            |
+Pdf     |        YES       |          NO            |
+Csv     |        N/A       |          N/A           |
 

@@ -2,6 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheet\Reader;
 
+use phpDocumentor\Reflection\Types\Boolean;
 use PhpOffice\PhpSpreadsheet\Reader\Exception as ReaderException;
 use PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner;
 use PhpOffice\PhpSpreadsheet\Shared\File;
@@ -28,7 +29,7 @@ abstract class BaseReader implements IReader
 
     /**
      * Read charts that are defined in the workbook?
-     * Identifies whether the Reader should read the definitions for any charts that exist in the workbook;.
+     * Identifies whether the Reader should load the definitions for any charts that exist in the workbook;.
      *
      * @var bool
      */
@@ -36,7 +37,7 @@ abstract class BaseReader implements IReader
 
     /**
      * Read Pivottable that are defined in the workbook?
-     * Identifies whether the Reader should read the definitions for any Pivottable that exist in the workbook;.
+     * Identifies whether the Reader should load the definitions for any Pivottable that exist in the workbook.
      *
      * @var bool
      */
@@ -98,7 +99,7 @@ abstract class BaseReader implements IReader
         return $this->includeCharts;
     }
 
-    public function setIncludeCharts($pValue)
+    public function setIncludeCharts($pValue = true)
     {
         $this->includeCharts = (bool) $pValue;
 
@@ -110,7 +111,7 @@ abstract class BaseReader implements IReader
         return $this->includePivotTables;
     }
 
-    public function setIncludePivotTables($pValue = false)
+    public function setIncludePivotTables($pValue = true)
     {
         $this->includePivotTables = (bool) $pValue;
 
@@ -161,6 +162,9 @@ abstract class BaseReader implements IReader
     {
         if (((bool) ($flags & self::LOAD_WITH_CHARTS)) === true) {
             $this->setIncludeCharts(true);
+        }
+        if (((bool) ($flags & self::LOAD_WITH_PIVOT_TABLES)) === true) {
+            $this->setIncludePivotTables(true);
         }
     }
 

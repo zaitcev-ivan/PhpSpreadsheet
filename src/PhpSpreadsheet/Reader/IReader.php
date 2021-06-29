@@ -6,6 +6,8 @@ interface IReader
 {
     public const LOAD_WITH_CHARTS = 1;
 
+    public const LOAD_WITH_PIVOT_TABLES = 2;
+
     /**
      * IReader constructor.
      */

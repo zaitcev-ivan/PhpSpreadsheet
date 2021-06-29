@@ -8,6 +8,8 @@ interface IWriter
 {
     public const SAVE_WITH_CHARTS = 1;
 
+    public const SAVE_WITH_PIVOT_TABLES = 2;
+
     /**
      * IWriter constructor.
      */
@@ -32,6 +34,26 @@ interface IWriter
      * @return IWriter
      */
     public function setIncludeCharts($pValue);
+
+    /**
+     * Write Pivot Tables in workbook?
+     *        If this is true, then the Writer will write definitions for any pivot tables that exist in the PhpSpreadsheet object.
+     *        If false (the default) it will ignore any pivot tables defined in the PhpSpreadsheet object.
+     *
+     * @return bool
+     */
+    public function getIncludePivotTables();
+
+    /**
+     * Set write Pivot Tables in workbook
+     *        Set to true, to advise the Writer to include any pivot tables that exist in the PhpSpreadsheet object.
+     *        Set to false (the default) to ignore pivot tables.
+     *
+     * @param bool $pValue
+     *
+     * @return IWriter
+     */
+    public function setIncludePivotTables($pValue);
 
     /**
      * Get Pre-Calculate Formulas flag

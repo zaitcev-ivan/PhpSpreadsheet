@@ -13,6 +13,14 @@ abstract class BaseWriter implements IWriter
     protected $includeCharts = false;
 
     /**
+     * Write Pivottable that are defined in the workbook?
+     * Identifies whether the Writer should write the definitions for any Pivottable that exist in the PhpSpreadsheet object.
+     *
+     * @var bool
+     */
+    protected $includePivotTables = false;
+
+    /**
      * Pre-calculate formulas
      * Forces PhpSpreadsheet to recalculate all formulae in a workbook when saving, so that the pre-calculated values are
      * immediately available to MS Excel or other office spreadsheet viewer when opening the file.
@@ -50,9 +58,21 @@ abstract class BaseWriter implements IWriter
         return $this->includeCharts;
     }
 
-    public function setIncludeCharts($pValue)
+    public function setIncludeCharts($pValue = true)
     {
         $this->includeCharts = (bool) $pValue;
+
+        return $this;
+    }
+
+    public function getIncludePivotTables()
+    {
+        return $this->includePivotTables;
+    }
+
+    public function setIncludePivotTables($pValue = true)
+    {
+        $this->includePivotTables = (bool) $pValue;
 
         return $this;
     }
@@ -98,6 +118,9 @@ abstract class BaseWriter implements IWriter
     {
         if (((bool) ($flags & self::SAVE_WITH_CHARTS)) === true) {
             $this->setIncludeCharts(true);
+        }
+        if (((bool) ($flags & self::SAVE_WITH_PIVOT_TABLES)) === true) {
+            $this->setIncludePivotTables(true);
         }
     }
 
